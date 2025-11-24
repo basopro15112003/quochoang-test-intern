@@ -5,7 +5,6 @@ type ApiProduct = Omit<Product, 'inStock'>;
 
 export function ProductList() {
     const [products, setProducts] = useState<Product[]>([]);
-    const [loading, setLoading] = useState(true)
     const [error, setError] = useState<string | null>(null)
 
     const [categoryFilter, setCategoryFilter] = useState<string>('');
